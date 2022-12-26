@@ -1,3 +1,6 @@
+# SPDX-FileCopyrightText: 2022 Kota Suzuki s21c1064cl@s.chibakoudai.jp
+# SPDX-License Identifier: BSD-3-Clause
+
 import rclpy
 from rclpy.node import Node
 from std_msgs.msg import Int16
