@@ -1,3 +1,6 @@
+# SPDX-FileCopyrightText: 2022 Kota Suzuki s21c1064cl@s.chibakoudai.jp
+# SPDX-License Identifier: BSD-3-Claus
+
 import launch
 import launch.actions
 import launch.substitutions

@@ -52,10 +52,6 @@ $ ros2 launch mypkg talk_listen.launch.py
 [listener-2] [INFO] [1672026968.479905500] [listener]: Listen: 5
 …
 ```
-# テストに関して
-* テストには以下のコンテナを、GitHub Actionsでダウンロードして使用しています。
-	* https://hub.docker.com/repository/docker/ryuichiueda/ubuntu22.04-ros2
-
 # 動作確認済み環境
 * Ubuntu 20.04
 * Python 3.8.10

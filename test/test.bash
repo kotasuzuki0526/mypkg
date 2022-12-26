@@ -1,4 +1,6 @@
 #!/bin/bash
+# SPDX-FileCopyrightText: 2022 Kota Suzuki s21c1064cl@s.chibakoudai.jp
+# SPDX-License Identifier: BSD-3-Clause
 
 dir=~
 [ "$1" !=  "" ] && dir="$1"
