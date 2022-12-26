@@ -30,8 +30,8 @@ $ ros2 run mypkg listener
 $ ros2 launch mypkg talk_listen.launch.py
 ```
 ## 結果
-* 一つ目（talkerを起動した方）の端末では何も表示されません。
-* 二つ目（listenerを起動した方）の端末では以下のように表示されます。
+* 一つ目（talkerを立ち上げた方）の端末では何も表示されません。
+* 二つ目（listenerを立ち上げた方）の端末では以下のように表示されます。
 ```
 [INFO] [1672024654.529754200] [listener]: Listen: 27
 [INFO] [1672024655.014093400] [listener]: Listen: 28
