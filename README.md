@@ -25,7 +25,10 @@ $ ros2 run mypkg talker
 ```
 $ ros2 run mypkg listener
 ```
-
+* また、以下のようにlaunchファイルを用いれば、１つの端末でtalkerとlistenerを一度に立ち上げることができます。
+```
+$ ros2 launch mypkg talk_listen.launch.py
+```
 ## 結果
 * 一つ目（talkerを起動した方）の端末では何も表示されません。
 * 二つ目（listenerを起動した方）の端末では以下のように表示されます。
@@ -33,7 +36,21 @@ $ ros2 run mypkg listener
 [INFO] [1672024654.529754200] [listener]: Listen: 27
 [INFO] [1672024655.014093400] [listener]: Listen: 28
 [INFO] [1672024655.514029300] [listener]: Listen: 29 
-・・・
+…
+```
+* launchファイルを用いた場合は、以下のように表示されます。
+```
+[INFO] [launch]: All log files can be found below /home/...
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [talker-1]: process started with pid [597]
+[INFO] [listener-2]: process started with pid [599]
+[listener-2] [INFO] [1672026966.003822400] [listener]: Listen: 0
+[listener-2] [INFO] [1672026966.479921300] [listener]: Listen: 1
+[listener-2] [INFO] [1672026966.978911200] [listener]: Listen: 2
+[listener-2] [INFO] [1672026967.479919800] [listener]: Listen: 3
+[listener-2] [INFO] [1672026967.979842900] [listener]: Listen: 4
+[listener-2] [INFO] [1672026968.479905500] [listener]: Listen: 5
+…
 ```
 # テストに関して
 * テストには以下のコンテナを、GitHub Actionsでダウンロードして使用しています。
