@@ -1,6 +1,6 @@
 # mypkg
 * このリポジトリはROS2のパッケージとなっています。
-* このパッケージには、talkerというノードと、listenerというノードがあります。
+* このパッケージには、talkerという名前のノードと、listenerという名前のノードがあります。
 
 # talkerとlistener
 [![test](https://github.com/kotasuzuki0526/mypkg/actions/workflows/test.yml/badge.svg)](https://github.com/kotasuzuki0526/mypkg/actions/workflows/test.yml)
