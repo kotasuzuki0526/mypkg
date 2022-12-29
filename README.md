@@ -1,16 +1,16 @@
 # mypkg
-* このリポジトリはROS2のパッケージとなっています。
+* このリポジトリはROS2のパッケージです。
 * このパッケージには、talkerという名前のノードと、listenerという名前のノードがあります。
 
 # talkerとlistener
 [![test](https://github.com/kotasuzuki0526/mypkg/actions/workflows/test.yml/badge.svg)](https://github.com/kotasuzuki0526/mypkg/actions/workflows/test.yml)
 
 ## talker
-* このノードはパブリッシャを持ち、数字をカウントして、countupというトピックを通じて送信します。
+* このノードはパブリッシャを持ち、数字をカウントして、`countup`というトピックを通じて送信します。
 * メッセージの型は16ビット符号つき整数です。
 
 ## listener
-* このノードはサブスクライバを持ち、countupからメッセージをもらって表示します。
+* このノードはサブスクライバを持ち、`countup`からメッセージをもらって表示します。
 * メッセージの型は16ビット符号つき整数です。
 
 # 実行方法と結果
@@ -52,6 +52,9 @@ $ ros2 launch mypkg talk_listen.launch.py
 [listener-2] [INFO] [1672026968.479905500] [listener]: Listen: 5
 …
 ```
+# ROSのバージョン
+* ROS2 Foxy Fitzroy
+
 # 動作確認済み環境
 * Ubuntu 20.04
 * Python 3.8.10
