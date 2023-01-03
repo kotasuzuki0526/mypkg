@@ -16,6 +16,8 @@ class Talker():
         msg.data = self.n
         self.pub.publish(msg)
         self.n += 1
+
+
 def main():
     rclpy.init()
     node = Node("talker")
